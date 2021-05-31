@@ -1,0 +1,27 @@
+
+<div>
+    <h1>Login for more details.</h1>
+</div>
+
+<div class="body-container">
+    <table>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" #un></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" #ps></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button (click)="loginHere(un.value,ps.value)">Login</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>{{response}}</td>
+        </tr>
+    </table>
+    <div>
